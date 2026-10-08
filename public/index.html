@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faulty Fox Studios</title>
   <meta name="description" content="Faulty Fox Studios makes games about how people think. Play Deviations, and join the waitlist for Spin Devil and Clawback." />
-  <link rel="icon" type="image/png" href="/fox.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #FEFDF8;
-      --card: #FFFFFF;
-      --ink: #1f2933;
-      --muted: #6b7280;
-      --line: #e7e5dc;
-      --green: #2F562D;
-      --green-ink: #FFFFFF;
+      --bg: #121213;
+      --card: #1b1b1d;
+      --ink: #FBEBD3;
+      --muted: #a8a29a;
+      --line: #2c2c2f;
+      --accent: #EC682F;
+      --accent-ink: #121213;
     }
     * { box-sizing: border-box; }
     body {
@@ -26,18 +26,18 @@
       line-height: 1.6;
     }
     .page { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1, h2, h3, .brand { font-family: "Archivo Black", system-ui, sans-serif; font-weight: 400; line-height: 1.15; }
+    h1, h2, h3 { font-family: "Archivo Black", system-ui, sans-serif; font-weight: 400; line-height: 1.15; }
 
-    header { display: flex; align-items: center; gap: 12px; }
-    header img { width: 48px; height: 48px; }
-    .brand { font-size: 1.15rem; }
+    header { text-align: center; }
+    header img { width: 100%; max-width: 420px; height: auto; }
 
-    .hero { padding: 56px 0 40px; }
+    .hero { padding: 8px 0 40px; text-align: center; }
+    .hero p { margin: 0 auto; }
     .hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 12px; }
     .hero p { font-size: 1.1rem; color: var(--muted); margin: 0; max-width: 34em; }
 
     section { margin-top: 40px; }
-    section > h2 { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green); margin: 0 0 12px; }
+    section > h2 { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
 
     .card {
       background: var(--card);
@@ -52,10 +52,10 @@
     .tag {
       display: inline-block; font-size: 0.75rem; font-weight: 600;
       padding: 2px 10px; border-radius: 999px; margin-bottom: 10px;
-      background: #eef3ed; color: var(--green);
+      background: rgba(236,104,47,0.15); color: var(--accent);
     }
     .btn {
-      display: inline-block; background: var(--green); color: var(--green-ink);
+      display: inline-block; background: var(--accent); color: var(--accent-ink);
       text-decoration: none; font-weight: 600; border: 0; cursor: pointer;
       padding: 10px 18px; border-radius: 8px; font-size: 1rem; font-family: inherit;
     }
@@ -66,17 +66,16 @@
       flex: 1 1 220px; min-width: 0; padding: 10px 12px; font-size: 1rem; font-family: inherit;
       border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink);
     }
-    .waitlist .msg { flex-basis: 100%; font-size: 0.9rem; color: var(--green); margin: 0; min-height: 1.4em; }
+    .waitlist .msg { flex-basis: 100%; font-size: 0.9rem; color: var(--accent); margin: 0; min-height: 1.4em; }
 
     footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); }
-    footer a { color: var(--green); }
+    footer a { color: var(--accent); }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
-      <img src="/fox.png" alt="" />
-      <span class="brand">Faulty Fox Studios</span>
+      <img src="/logo-web.jpg" alt="Faulty Fox Studios" width="768" height="512" />
     </header>
 
     <div class="hero">
